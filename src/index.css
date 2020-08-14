@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_div{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+.main_center{
+    width: 25%;
+    height: 80vh;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1{
+    color: #fff;
+    background: transparent;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+    padding: 6px 0 2px 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.2);
+
+}
+
+input {
+    text-align: center;
+    height: 30px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    width: 60%;
+    border-bottom: 2px solid #ff9a9e;
+    outline: none;
+}
+
+button{
+    min-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #ff9a9e;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    transition: .2s ease-in-out;
+}
+
+button:hover{
+    background-color: #ff565c;
+    transform: scale(1.2);
+    
+}
+ ul li{
+    padding-left: 25px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-content: center;
+    color: #ff494f;
+    text-transform: capitalize;
+}
+ li {
+     display: block;
+ }
+
+ @media (max-width: 1024px) {
+     .main_center {
+         width: 50%;
+     }
+     h1{
+         font-size: 1.2rem;
+     }
+ }
+
+ @media (max-width: 768px) {
+     .main_center {
+         width: 40%;
+     }
+     h1{
+         font-size: 1.2rem;
+     }
+ }
+ @media (max-width: 376px) {
+    .main_center {
+        width: 80%;
+    }
+    h1{
+        font-size: 1rem;
+    }
+}
